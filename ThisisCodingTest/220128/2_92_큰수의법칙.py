@@ -1,0 +1,11 @@
+N,M,K=map(int,input().split())
+A=list(map(int,input().split()))
+A.sort(reverse=True)
+first=A[0]
+second=A[1]
+count_first=M//(K+1)*K+M%(K+1)
+count_second=M//(K+1)
+print(count_first)
+print(count_second)
+result=count_first*first+count_second*second
+print(result)
